@@ -1,0 +1,1942 @@
+{
+  "sections": [
+    {
+      "index": 1,
+      "title": "Overview",
+      "sentence_evaluations": [
+        {
+          "index": 1,
+          "sentence": "**ATP-binding cassette transporter sub-family C member 11**, also **MRP8** (_Multidrug Resistance-Related Protein 8_), is a [membrane transporter](https://en.wikipedia.org/wiki/Membrane_transport_protein) that exports certain molecules from inside a cell.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes gene names and abbreviations that should be italicized.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Gene names 'ATP-binding cassette transporter sub-family C member 11' and 'MRP8' are bolded but not italicized.",
+              "reasoning": "Partial adherence to the requirement; gene names are formatted with bolding but lack the required italics.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses both full gene names and abbreviations.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "Both the full gene name and its abbreviation 'MRP8' are used in the sentence.",
+              "reasoning": "Partial adherence to best practices by including both full name and abbreviation; using abbreviations is recommended.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable when mentioning regulation of genes, ensuring correct usage of gene symbols.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "The sentence uses the recommended format by mentioning both the gene full name and its abbreviation.",
+              "reasoning": "Adheres to recommended gene symbol usage, enhancing clarity and by following best practices.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene names for full adherence to imperative standards."
+        },
+        {
+          "index": 2,
+          "sentence": "It is a [protein](https://en.wikipedia.org/wiki/Protein) that in humans is encoded by [gene](https://en.wikipedia.org/wiki/Gene) _ABCC11_.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses a gene symbol which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene symbol as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the gene abbreviation '_ABCC11_' as recommended instead of the full name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence includes a human gene symbol which should be in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly written in uppercase letters.",
+              "reasoning": "Fully adheres to the requirement of writing human gene symbols in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence mentions the gene symbol for clarity.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is used correctly without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 3,
+          "sentence": "The gene is responsible for determination of human [cerumen](https://en.wikipedia.org/wiki/Earwax) type (wet or dry ear wax) and presence of underarm [osmidrosis](https://en.wikipedia.org/wiki/Osmidrosis) (odor associated with [sweat](https://en.wikipedia.org/wiki/Perspiration) caused by [apocrine](https://en.wikipedia.org/wiki/Apocrine) secretion), and is associated with [colostrum](https://en.wikipedia.org/wiki/Colostrum) secretion.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 1,
+          "sentence": "**ATP-binding cassette transporter sub-family C member 11**, also **MRP8** (_Multidrug Resistance-Related Protein 8_), is a [membrane transporter](https://en.wikipedia.org/wiki/Membrane_transport_protein) that exports certain molecules from inside a cell.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes gene names and abbreviations that should be italicized.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Gene names 'ATP-binding cassette transporter sub-family C member 11' and 'MRP8' are bolded but not italicized.",
+              "reasoning": "Partial adherence to the requirement; gene names are formatted with bolding but lack the required italics.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses both full gene names and abbreviations.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "Both the full gene name and its abbreviation 'MRP8' are used in the sentence.",
+              "reasoning": "Partial adherence to best practices by including both full name and abbreviation; using abbreviations is recommended.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable when mentioning regulation of genes, ensuring correct usage of gene symbols.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "The sentence uses the recommended format by mentioning both the gene full name and its abbreviation.",
+              "reasoning": "Adheres to recommended gene symbol usage, enhancing clarity and by following best practices.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene names for full adherence to imperative standards."
+        },
+        {
+          "index": 2,
+          "sentence": "It is a [protein](https://en.wikipedia.org/wiki/Protein) that in humans is encoded by [gene](https://en.wikipedia.org/wiki/Gene) _ABCC11_.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses a gene symbol which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene symbol as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the gene abbreviation '_ABCC11_' as recommended instead of the full name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence includes a human gene symbol which should be in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly written in uppercase letters.",
+              "reasoning": "Fully adheres to the requirement of writing human gene symbols in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence mentions the gene symbol for clarity.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is used correctly without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 3,
+          "sentence": "The gene is responsible for determination of human [cerumen](https://en.wikipedia.org/wiki/Earwax) type (wet or dry ear wax) and presence of underarm [osmidrosis](https://en.wikipedia.org/wiki/Osmidrosis) (odor associated with [sweat](https://en.wikipedia.org/wiki/Perspiration) caused by [apocrine](https://en.wikipedia.org/wiki/Apocrine) secretion), and is associated with [colostrum](https://en.wikipedia.org/wiki/Colostrum) secretion.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 1,
+          "sentence": "**ATP-binding cassette transporter sub-family C member 11**, also **MRP8** (_Multidrug Resistance-Related Protein 8_), is a [membrane transporter](https://en.wikipedia.org/wiki/Membrane_transport_protein) that exports certain molecules from inside a cell.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes gene names and abbreviations that should be italicized.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Gene names 'ATP-binding cassette transporter sub-family C member 11' and 'MRP8' are bolded but not italicized.",
+              "reasoning": "Partial adherence to the requirement; gene names are formatted with bolding but lack the required italics.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses both full gene names and abbreviations.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "Both the full gene name and its abbreviation 'MRP8' are used in the sentence.",
+              "reasoning": "Partial adherence to best practices by including both full name and abbreviation; using abbreviations is recommended.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable when mentioning regulation of genes, ensuring correct usage of gene symbols.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "The sentence uses the recommended format by mentioning both the gene full name and its abbreviation.",
+              "reasoning": "Adheres to recommended gene symbol usage, enhancing clarity and by following best practices.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene names for full adherence to imperative standards."
+        },
+        {
+          "index": 2,
+          "sentence": "It is a [protein](https://en.wikipedia.org/wiki/Protein) that in humans is encoded by [gene](https://en.wikipedia.org/wiki/Gene) _ABCC11_.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses a gene symbol which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene symbol as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the gene abbreviation '_ABCC11_' as recommended instead of the full name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence includes a human gene symbol which should be in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly written in uppercase letters.",
+              "reasoning": "Fully adheres to the requirement of writing human gene symbols in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence mentions the gene symbol for clarity.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is used correctly without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 3,
+          "sentence": "The gene is responsible for determination of human [cerumen](https://en.wikipedia.org/wiki/Earwax) type (wet or dry ear wax) and presence of underarm [osmidrosis](https://en.wikipedia.org/wiki/Osmidrosis) (odor associated with [sweat](https://en.wikipedia.org/wiki/Perspiration) caused by [apocrine](https://en.wikipedia.org/wiki/Apocrine) secretion), and is associated with [colostrum](https://en.wikipedia.org/wiki/Colostrum) secretion.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 1,
+          "sentence": "**ATP-binding cassette transporter sub-family C member 11**, also **MRP8** (_Multidrug Resistance-Related Protein 8_), is a [membrane transporter](https://en.wikipedia.org/wiki/Membrane_transport_protein) that exports certain molecules from inside a cell.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes gene names and abbreviations that should be italicized.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Gene names 'ATP-binding cassette transporter sub-family C member 11' and 'MRP8' are bolded but not italicized.",
+              "reasoning": "Partial adherence to the requirement; gene names are formatted with bolding but lack the required italics.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses both full gene names and abbreviations.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "Both the full gene name and its abbreviation 'MRP8' are used in the sentence.",
+              "reasoning": "Partial adherence to best practices by including both full name and abbreviation; using abbreviations is recommended.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable when mentioning regulation of genes, ensuring correct usage of gene symbols.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "The sentence uses the recommended format by mentioning both the gene full name and its abbreviation.",
+              "reasoning": "Adheres to recommended gene symbol usage, enhancing clarity and by following best practices.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene names for full adherence to imperative standards."
+        },
+        {
+          "index": 2,
+          "sentence": "It is a [protein](https://en.wikipedia.org/wiki/Protein) that in humans is encoded by [gene](https://en.wikipedia.org/wiki/Gene) _ABCC11_.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses a gene symbol which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene symbol as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the gene abbreviation '_ABCC11_' as recommended instead of the full name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence includes a human gene symbol which should be in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly written in uppercase letters.",
+              "reasoning": "Fully adheres to the requirement of writing human gene symbols in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence mentions the gene symbol for clarity.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is used correctly without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 3,
+          "sentence": "The gene is responsible for determination of human [cerumen](https://en.wikipedia.org/wiki/Earwax) type (wet or dry ear wax) and presence of underarm [osmidrosis](https://en.wikipedia.org/wiki/Osmidrosis) (odor associated with [sweat](https://en.wikipedia.org/wiki/Perspiration) caused by [apocrine](https://en.wikipedia.org/wiki/Apocrine) secretion), and is associated with [colostrum](https://en.wikipedia.org/wiki/Colostrum) secretion.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 1,
+          "sentence": "**ATP-binding cassette transporter sub-family C member 11**, also **MRP8** (_Multidrug Resistance-Related Protein 8_), is a [membrane transporter](https://en.wikipedia.org/wiki/Membrane_transport_protein) that exports certain molecules from inside a cell.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes gene names and abbreviations that should be italicized.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Gene names 'ATP-binding cassette transporter sub-family C member 11' and 'MRP8' are bolded but not italicized.",
+              "reasoning": "Partial adherence to the requirement; gene names are formatted with bolding but lack the required italics.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses both full gene names and abbreviations.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "Both the full gene name and its abbreviation 'MRP8' are used in the sentence.",
+              "reasoning": "Partial adherence to best practices by including both full name and abbreviation; using abbreviations is recommended.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable when mentioning regulation of genes, ensuring correct usage of gene symbols.",
+              "score": 0.75,
+              "confidence": 0.85,
+              "evidence": "The sentence uses the recommended format by mentioning both the gene full name and its abbreviation.",
+              "reasoning": "Adheres to recommended gene symbol usage, enhancing clarity and by following best practices.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene names for full adherence to imperative standards."
+        },
+        {
+          "index": 2,
+          "sentence": "It is a [protein](https://en.wikipedia.org/wiki/Protein) that in humans is encoded by [gene](https://en.wikipedia.org/wiki/Gene) _ABCC11_.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses a gene symbol which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene symbol as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the gene abbreviation '_ABCC11_' as recommended instead of the full name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence includes a human gene symbol which should be in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is correctly written in uppercase letters.",
+              "reasoning": "Fully adheres to the requirement of writing human gene symbols in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence mentions the gene symbol for clarity.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "The gene symbol '_ABCC11_' is used correctly without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 3,
+          "sentence": "The gene is responsible for determination of human [cerumen](https://en.wikipedia.org/wiki/Earwax) type (wet or dry ear wax) and presence of underarm [osmidrosis](https://en.wikipedia.org/wiki/Osmidrosis) (odor associated with [sweat](https://en.wikipedia.org/wiki/Perspiration) caused by [apocrine](https://en.wikipedia.org/wiki/Apocrine) secretion), and is associated with [colostrum](https://en.wikipedia.org/wiki/Colostrum) secretion.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        }
+      ],
+      "requirement_evaluations": [
+        {
+          "requirement_id": "R25",
+          "requirement_category": "Structure",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Applicable because the first sentence defines the scope of the gene/protein article.",
+          "score": 1.0,
+          "confidence": 0.95,
+          "evidence": "The first sentence clearly defines the protein and gene, establishing the article's scope.",
+          "reasoning": "Fully meets the requirement by defining the article's scope in the first sentence of the lead.",
+          "overlap_notes": "No significant overlaps detected."
+        },
+        {
+          "requirement_id": "R26",
+          "requirement_category": "Content",
+          "classification": "Best Practices",
+          "applicable": true,
+          "applicability_reasoning": "Applicable since the lead sentence uses the recommended UniProt protein name and HUGO gene symbol.",
+          "score": 1.0,
+          "confidence": 0.95,
+          "evidence": "Uses the UniProt name 'MRP8' and HUGO gene symbol '_ABCC11_' in the lead sentence.",
+          "reasoning": "Fully meets the requirement by using the recommended UniProt name and HUGO gene symbol in the lead.",
+          "overlap_notes": "No significant overlaps detected."
+        }
+      ],
+      "meta_notes": "The section is well-defined but needs formatting adjustments for gene nomenclature."
+    },
+    {
+      "index": 2,
+      "title": "Function",
+      "sentence_evaluations": [
+        {
+          "index": 4,
+          "sentence": "The ABCC11 transporter is a member of the MRP subfamily which is involved in multi-drug resistance.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' which should be italicized according to gene nomenclature guidelines.",
+              "score": 0.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is not italicized in the sentence.",
+              "reasoning": "Imperative Standards not met; gene abbreviation not italicized.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC11', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses 'ABCC11 transporter', following recommended usage for gene symbols.",
+              "reasoning": "Adheres to best practices for clear expression of gene symbols.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        },
+        {
+          "index": 7,
+          "sentence": "This gene and family member [ABCC12](https://en.wikipedia.org/wiki/ABCC12) are determined to be derived by duplication and are both localized to chromosome 16q12.1.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC12' which should be italicized.",
+              "score": 0.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC12' is not italicized in the sentence.",
+              "reasoning": "Imperative Standards not met; gene abbreviation not italicized.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC12'.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses the abbreviation 'ABCC12' instead of the full gene name.",
+              "reasoning": "Fully adheres to best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC12', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC12' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses 'ABCC12', following recommended usage for gene symbols.",
+              "reasoning": "Adheres to best practices for clear expression of gene symbols.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        },
+        {
+          "index": 8,
+          "sentence": "Multiple alternatively spliced transcript variants have been described for this gene.## Molecular genetics\n\nThe _ABCC11_ [gene](https://en.wikipedia.org/wiki/Gene) is present in the [human genome](https://en.wikipedia.org/wiki/Human_genome) as two [alleles](https://en.wikipedia.org/wiki/Allele), differing in one [nucleotide](https://en.wikipedia.org/wiki/Nucleotide) also known as a [single nucleotide polymorphism (SNP)](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene abbreviation as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 9,
+          "sentence": "A SNP in the _ABCC11_ gene on [chromosome 16](<https://en.wikipedia.org/wiki/Chromosome_16_(human)>) at [base](https://en.wikipedia.org/wiki/Nucleobase) position 538 of either a [guanine](https://en.wikipedia.org/wiki/Guanine) or [adenine](https://en.wikipedia.org/wiki/Adenine) determines two distinct groups of [phenotypes](https://en.wikipedia.org/wiki/Phenotype).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene abbreviation as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 19,
+          "sentence": "Because the adenine containing allele protein product is only partially degraded, the remaining functional protein is located on the cell surface membrane which _ABCC11_ gene's role in sweat odor is likely in part due to the quantitative dosage of ABCC11 protein.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized in the sentence.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene abbreviation as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 23,
+          "sentence": "Most human characteristics are controlled by multiple genes ([polygene](https://en.wikipedia.org/wiki/Polygene)s); _ABCC11_ is a peculiar example of a gene with unambiguous phenotypes that is controlled by a SNP.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized in the sentence.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene abbreviation as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 4,
+          "sentence": "The ABCC11 transporter is a member of the MRP subfamily which is involved in multi-drug resistance.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' which should be italicized according to gene nomenclature guidelines.",
+              "score": 0.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is not italicized in the sentence.",
+              "reasoning": "Imperative Standards not met; gene abbreviation not italicized.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC11', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses 'ABCC11 transporter', following recommended usage for gene symbols.",
+              "reasoning": "Adheres to best practices for clear expression of gene symbols.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        },
+        {
+          "index": 7,
+          "sentence": "This gene and family member [ABCC12](https://en.wikipedia.org/wiki/ABCC12) are determined to be derived by duplication and are both localized to chromosome 16q12.1.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC12' which should be italicized.",
+              "score": 0.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC12' is not italicized in the sentence.",
+              "reasoning": "Imperative Standards not met; gene abbreviation not italicized.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC12'.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses the abbreviation 'ABCC12' instead of the full gene name.",
+              "reasoning": "Fully adheres to best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC12', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC12' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "Uses 'ABCC12', following recommended usage for gene symbols.",
+              "reasoning": "Adheres to best practices for clear expression of gene symbols.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        },
+        {
+          "index": 8,
+          "sentence": "Multiple alternatively spliced transcript variants have been described for this gene.## Molecular genetics\n\nThe _ABCC11_ [gene](https://en.wikipedia.org/wiki/Gene) is present in the [human genome](https://en.wikipedia.org/wiki/Human_genome) as two [alleles](https://en.wikipedia.org/wiki/Allele), differing in one [nucleotide](https://en.wikipedia.org/wiki/Nucleotide) also known as a [single nucleotide polymorphism (SNP)](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene abbreviation as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 9,
+          "sentence": "A SNP in the _ABCC11_ gene on [chromosome 16](<https://en.wikipedia.org/wiki/Chromosome_16_(human)>) at [base](https://en.wikipedia.org/wiki/Nucleobase) position 538 of either a [guanine](https://en.wikipedia.org/wiki/Guanine) or [adenine](https://en.wikipedia.org/wiki/Adenine) determines two distinct groups of [phenotypes](https://en.wikipedia.org/wiki/Phenotype).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene abbreviation as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 19,
+          "sentence": "Because the adenine containing allele protein product is only partially degraded, the remaining functional protein is located on the cell surface membrane which _ABCC11_ gene's role in sweat odor is likely in part due to the quantitative dosage of ABCC11 protein.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized in the sentence.",
+              "reasoning": "Fully adheres to the requirement by italicizing the gene abbreviation as per imperative standards.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 23,
+          "sentence": "Most human characteristics are controlled by multiple genes ([polygene](https://en.wikipedia.org/wiki/Polygene)s); _ABCC11_ is a peculiar example of a gene with unambiguous phenotypes that is controlled by a SNP.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'_ABCC11_' is correctly italicized in the sentence.",
+              "reasoning": "Fully adheres to the requirement by italicizing gene abbreviations.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        }
+      ],
+      "requirement_evaluations": [
+        {
+          "requirement_id": "R30",
+          "requirement_category": "Content",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Applicable because the Function section should describe the function of the transcribed protein.",
+          "score": 1.0,
+          "confidence": 1.0,
+          "evidence": "The Function section comprehensively describes ABCC11's role in various physiological processes and molecular functions.",
+          "reasoning": "Fully meets the requirement by thoroughly describing the function of the transcribed protein.",
+          "overlap_notes": "No significant overlaps detected."
+        }
+      ],
+      "meta_notes": "The Function section effectively describes the protein's functions but should ensure that all gene abbreviations are italicized to adhere to imperative standards."
+    },
+    {
+      "index": 3,
+      "title": "Demographics",
+      "sentence_evaluations": [
+        {
+          "index": 1,
+          "sentence": "The history of the migration of humans can be traced back using the _ABCC11_ gene alleles.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes a gene abbreviation that should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Gene abbreviation '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing gene abbreviations.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses a gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 2,
+          "sentence": "The variation between ear wax in [ethnicities](https://en.wikipedia.org/wiki/Ethnic_group) around the world are specifically due to the _ABCC11_ gene alleles.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes a gene abbreviation that should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Gene abbreviation '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing gene abbreviations.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 6,
+          "sentence": "The study found that the derived allele of ABCC11 associated with dry earwax and reduced body odor was absent in all European hunter gatherers, except for a [Western Hunter Gatherer](https://en.wikipedia.org/wiki/Western_Hunter_Gatherers) from [Mesolithic](https://en.wikipedia.org/wiki/Mesolithic) central Europe.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11', which should be italicized.",
+              "score": 0.0,
+              "confidence": 0.9,
+              "evidence": "'ABCC11' is not italicized in the sentence.",
+              "reasoning": "Does not adhere to imperative standards; gene abbreviation should be italicized.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC11', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses 'ABCC11' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        },
+        {
+          "index": 12,
+          "sentence": "The [allele frequencies](https://en.wikipedia.org/wiki/Allele_frequency) within ethnicities continued to be maintained because the _ABCC11_ gene is inherited as a [haplotype](https://en.wikipedia.org/wiki/Haplotype), a group of genes or alleles that tend to be inherited as a single unit.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes a gene abbreviation '_ABCC11_' that should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Gene abbreviation '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing gene abbreviations.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 13,
+          "sentence": "The amount of [volatile organic compounds](https://en.wikipedia.org/wiki/Volatile_organic_compound) (VOCs) in ear wax was found to be related to variation in ABCC11 [genotype](https://en.wikipedia.org/wiki/Genotype), which in turn is dependent on ethnic origin.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11', which should be italicized.",
+              "score": 0.0,
+              "confidence": 0.9,
+              "evidence": "'ABCC11' is not italicized in the sentence.",
+              "reasoning": "Does not adhere to imperative standards; gene abbreviation should be italicized.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC11', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses 'ABCC11' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        },
+        {
+          "index": 1,
+          "sentence": "The history of the migration of humans can be traced back using the _ABCC11_ gene alleles.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes a gene abbreviation that should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Gene abbreviation '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing gene abbreviations.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses a gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 2,
+          "sentence": "The variation between ear wax in [ethnicities](https://en.wikipedia.org/wiki/Ethnic_group) around the world are specifically due to the _ABCC11_ gene alleles.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes a gene abbreviation '_ABCC11_' which should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Gene abbreviation '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing gene abbreviations.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 6,
+          "sentence": "The study found that the derived allele of ABCC11 associated with dry earwax and reduced body odor was absent in all European hunter gatherers, except for a [Western Hunter Gatherer](https://en.wikipedia.org/wiki/Western_Hunter_Gatherers) from [Mesolithic](https://en.wikipedia.org/wiki/Mesolithic) central Europe.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11', which should be italicized.",
+              "score": 0.0,
+              "confidence": 0.9,
+              "evidence": "'ABCC11' is not italicized in the sentence.",
+              "reasoning": "Does not adhere to imperative standards; gene abbreviation should be italicized.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC11', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses 'ABCC11' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        },
+        {
+          "index": 12,
+          "sentence": "The [allele frequencies](https://en.wikipedia.org/wiki/Allele_frequency) within ethnicities continued to be maintained because the _ABCC11_ gene is inherited as a [haplotype](https://en.wikipedia.org/wiki/Haplotype), a group of genes or alleles that tend to be inherited as a single unit.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence includes a gene abbreviation '_ABCC11_' that should be italicized.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Gene abbreviation '_ABCC11_' is correctly italicized.",
+              "reasoning": "Fully adheres to the requirement by italicizing gene abbreviations.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation '_ABCC11_'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation '_ABCC11_' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene '_ABCC11_', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses '_ABCC11_' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Sentence adheres well to gene nomenclature standards."
+        },
+        {
+          "index": 13,
+          "sentence": "The amount of [volatile organic compounds](https://en.wikipedia.org/wiki/Volatile_organic_compound) (VOCs) in ear wax was found to be related to variation in ABCC11 [genotype](https://en.wikipedia.org/wiki/Genotype), which in turn is dependent on ethnic origin.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11', which should be italicized.",
+              "score": 0.0,
+              "confidence": 0.9,
+              "evidence": "'ABCC11' is not italicized in the sentence.",
+              "reasoning": "Does not adhere to imperative standards; gene abbreviation should be italicized.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses the abbreviation 'ABCC11' instead of the full gene name.",
+              "reasoning": "Fully adheres to the best practice of using abbreviations over full gene names.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the human gene 'ABCC11', which should be written in capitals.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is written in all capitals.",
+              "reasoning": "Fully adheres to the requirement of writing human gene names in capitals.",
+              "overlap_notes": "No overlaps with other requirements."
+            },
+            {
+              "requirement_id": "R8",
+              "requirement_category": "Language Usage",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable as the sentence uses the recommended usage of gene symbols.",
+              "score": 1.0,
+              "confidence": 0.95,
+              "evidence": "Uses 'ABCC11' correctly in the sentence without redundancy.",
+              "reasoning": "Fully adheres to the recommended usage of gene symbols, avoiding redundancy.",
+              "overlap_notes": "No overlaps with other requirements."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene abbreviation for full adherence to imperative standards."
+        }
+      ],
+      "requirement_evaluations": [
+        {
+          "requirement_id": "R35",
+          "requirement_category": "Citations",
+          "classification": "Best Practices",
+          "applicable": true,
+          "applicability_reasoning": "Applicable because the section contains multiple factual claims and data that require inline citations for verifiability.",
+          "score": 0.25,
+          "confidence": 0.9,
+          "evidence": "No inline citations are present in the Demographics section.",
+          "reasoning": "Does not meet the best practice of including dense inline citations, which is necessary for verifiability.",
+          "overlap_notes": "No overlaps with other requirements."
+        }
+      ],
+      "meta_notes": "The Demographics section covers the distribution and history of the ABCC11 gene among populations but lacks inline citations, which are necessary for verifiability and adherence to best practices."
+    },
+    {
+      "index": 4,
+      "title": "See also",
+      "sentence_evaluations": [
+        {
+          "index": 1,
+          "sentence": "- [ATP-binding cassette transporter](https://en.wikipedia.org/wiki/ATP-binding_cassette_transporter)",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 2,
+          "sentence": "- [Body odor](https://en.wikipedia.org/wiki/Body_odor)## Further Reading\n\n- Bera TK, Lee S, Salvatore G, Lee B, Pastan I.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "\"MRP8, a new member of ABC transporter superfamily, identified by EST database mining and gene prediction program, is highly expressed in breast cancer.\" _Molecular Medicine_, volume 7, issue 8, pages 509\u201316, August 2001.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "DOI: [10.1007/BF03401856](https://doi.org/10.1007/BF03401856)\n\n- Yabuuchi H, Shimizu H, Takayanagi S, Ishikawa T.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "\"Multiple splicing variants of two new human ATP-binding cassette transporters, ABCC11 and ABCC12.\" _Biochemical and Biophysical Research Communications_, volume 288, issue 4, pages 933\u20139, November 2001.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 6,
+          "sentence": "DOI: [10.1006/bbrc.2001.5865](https://doi.org/10.1006/bbrc.2001.5865)\n\n- Lai L, Tan TM.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 7,
+          "sentence": "\"Role of glutathione in the multidrug resistance protein 4 (MRP4/ABCC4)-mediated efflux of cAMP and resistance to purine analogues.\" _The Biochemical Journal_, volume 361, issue Pt 3, pages 497\u2013503, February 2002.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 8,
+          "sentence": "DOI: [10.1042/0264-6021:3610497](https://doi.org/10.1042/0264-6021:3610497)\n\n- Str\u00edz I, Jaresov\u00e1 M, L\u00e1cha J, Sedl\u00e1cek J, V\u00edtko S.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 9,
+          "sentence": "\"MRP 8/14 and procalcitonin serum levels in organ transplantations.\" _Annals of Transplantation_, volume 6, issue 2, pages 6\u20139, 2002.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 10,
+          "sentence": "- Tomita H, Yamada K, Ghadami M, Ogura T, Yanai Y, Nakatomi K, Sadamatsu M, Masui A, Kato N, Niikawa N.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 11,
+          "sentence": "\"Mapping of the wet/dry earwax locus to the pericentromeric region of chromosome 16.\" _Lancet_, volume 359, issue 9322, pages 2000\u20132, June 2002.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 12,
+          "sentence": "DOI: [10.1016/S](https://doi.org/10.1016/S)",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        }
+      ],
+      "requirement_evaluations": [],
+      "meta_notes": null
+    }
+  ],
+  "article_evaluation": {
+    "requirement_evaluations": [
+      {
+        "requirement_id": "R1",
+        "requirement_category": "Content",
+        "classification": "Contextual Considerations",
+        "applicable": true,
+        "applicability_reasoning": "Applicable because the article is about a human gene/protein.",
+        "score": 0.5,
+        "confidence": 0.8,
+        "evidence": "The article mentions the human gene 'ABCC11' but does not mention orthologs in other species.",
+        "reasoning": "Partially meets the scope requirement by defining the human gene, but lacks information on orthologs in other species.",
+        "overlap_notes": "No significant overlaps detected."
+      },
+      {
+        "requirement_id": "R35",
+        "requirement_category": "Citations",
+        "classification": "Best Practices",
+        "applicable": true,
+        "applicability_reasoning": "Applicable to ensure MCB articles have dense inline citations.",
+        "score": 0.0,
+        "confidence": 0.95,
+        "evidence": "No inline citations or <ref> tags found in the content.",
+        "reasoning": "Does not meet the requirement for dense inline citations, significantly affecting the score.",
+        "overlap_notes": "No overlaps with other requirements."
+      },
+      {
+        "requirement_id": "R37",
+        "requirement_category": "Citations",
+        "classification": "Imperative Standards",
+        "applicable": true,
+        "applicability_reasoning": "Applicable as the citation format needs to be consistent.",
+        "score": 0.0,
+        "confidence": 0.95,
+        "evidence": "No indications of citation formats being used.",
+        "reasoning": "Lacks citations required by the requirement, failing to meet the standard.",
+        "overlap_notes": "No overlaps with other requirements."
+      },
+      {
+        "requirement_id": "R56",
+        "requirement_category": "Structure",
+        "classification": "Imperative Standards",
+        "applicable": true,
+        "applicability_reasoning": "Applicable as all articles must include relevant categories.",
+        "score": 0.0,
+        "confidence": 0.95,
+        "evidence": "No categories included in the content provided.",
+        "reasoning": "Fails to include any category, not adhering to imperative standard of categorizing articles.",
+        "overlap_notes": "No overlaps with other requirements."
+      }
+    ],
+    "meta_notes": null
+  }
+}
