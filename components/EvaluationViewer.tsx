@@ -1,11 +1,13 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Info, AlertCircle, CheckCircle, XCircle } from "lucide-react";
+import { Info, AlertCircle } from "lucide-react";
 
-const EvaluationViewer = ({
+export const EvaluationViewer = ({
   evaluationData,
   selectedSection,
   selectedSentence,
@@ -139,5 +141,3 @@ const EvaluationViewer = ({
     </Card>
   );
 };
-
-export default EvaluationViewer;

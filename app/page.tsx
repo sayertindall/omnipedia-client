@@ -1,18 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ArticleRenderer } from "@/components/ArticleRenderer";
 import { SidePanel } from "@/components/SidePanel";
 import { HighlightToggle } from "@/components/HighlightToggle";
 import useSWR from "swr";
+import { EvaluationData } from "@/lib/eval";
 
 export default function Page() {
   const [selectedText, setSelectedText] = useState<string | null>(null);
   const [selectedType, setSelectedType] = useState<
-    "section" | "sentence" | null
+    "section" | "sentence" | "article" | null
   >(null);
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
   const [highlightEnabled, setHighlightEnabled] = useState(true);
+  const [selectedEvaluation, setSelectedEvaluation] = useState<{
+    type: "section" | "sentence" | "article" | null;
+    data: EvaluationData | null;
+    sectionIndex?: number;
+    sentenceIndex?: number;
+  }>({ type: null, data: null });
 
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -21,42 +28,33 @@ export default function Page() {
     revalidateOnReconnect: false,
   });
 
-  useEffect(() => {
-    console.log("DATA: ", data);
-  }, [data]);
-
   const handleElementClick = (
     text: string,
     type: "section" | "sentence",
     sectionIdx: number,
     sentenceIdx?: number
   ) => {
-    // if type == section, idx == section idx
-    // if type == sentence, idx == section idx + sentence idx
-    // setSelectedText(text);
-    // setSelectedType(type);
-    // setSidePanelOpen(true);
-    if (type === "section") {
-      console.log("Section clicked:", data.article[sectionIdx].content);
-      // Set the evaluation data for the section
-      const sectionEvaluation = data.evaluation.sections.find(
-        (section) => section.index === sectionIdx + 1
-      );
-      console.log("Section Evaluation:", sectionEvaluation);
-    } else if (type === "sentence" && sentenceIdx !== undefined) {
-      console.log(
-        "Sentence clicked:",
-        data.article[sectionIdx].sentences[sentenceIdx]
-      );
-      // Set the evaluation data for the sentence
-      const sectionEvaluation = data.evaluation.sections.find(
-        (section) => section.index === sectionIdx + 1
-      );
-      const sentenceEvaluation = sectionEvaluation?.sentence_evaluations.find(
-        (sentence) => sentence.index === sentenceIdx + 1
-      );
-      console.log("Sentence Evaluation:", sentenceEvaluation);
-    }
+    console.log("type: ", type);
+    console.log("sectionIdx: ", sectionIdx);
+    console.log("sentenceIdx: ", sentenceIdx);
+
+    if (!data || !data.evaluation) return;
+
+    // Adjusting indices to match one-based indexing used in evaluation data
+    const sectionDataIndex = sectionIdx + 1;
+    const sentenceDataIndex =
+      sentenceIdx !== undefined ? sentenceIdx + 1 : undefined;
+
+    setSelectedText(text);
+    setSelectedType(type);
+    setSidePanelOpen(true);
+
+    setSelectedEvaluation({
+      type,
+      data: data.evaluation, // Pass the full EvaluationData
+      sectionIndex: sectionDataIndex,
+      sentenceIndex: sentenceDataIndex,
+    });
   };
 
   if (error) return <div>Error loading data</div>;
@@ -73,6 +71,7 @@ export default function Page() {
 
       <ArticleRenderer
         articleData={data.article}
+        evaluationData={data.evaluation}
         onElementClick={handleElementClick}
         highlightEnabled={highlightEnabled}
       />
@@ -82,8 +81,9 @@ export default function Page() {
         onClose={() => setSidePanelOpen(false)}
         selectedText={selectedText}
         selectedType={selectedType}
-        evaluationData={data.evaluation}
-        requirementsData={data.requirements}
+        evaluationData={selectedEvaluation.data}
+        sectionIndex={selectedEvaluation.sectionIndex}
+        sentenceIndex={selectedEvaluation.sentenceIndex}
       />
     </div>
   );

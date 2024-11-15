@@ -3,9 +3,9 @@
  * ------------------------------------- */
 
 /**
- * Interface representing a single requirement evaluation.
+ * export interface representing a single requirement evaluation.
  */
-interface RequirementEvaluation {
+export interface RequirementEvaluation {
   requirement_id: string;
   requirement_category: string;
   classification: string;
@@ -19,9 +19,9 @@ interface RequirementEvaluation {
 }
 
 /**
- * Interface representing the evaluation of a single sentence.
+ * export interface representing the evaluation of a single sentence.
  */
-interface SentenceEvaluation {
+export interface SentenceEvaluation {
   index: number;
   sentence: string;
   requirement_evaluations: RequirementEvaluation[];
@@ -29,9 +29,9 @@ interface SentenceEvaluation {
 }
 
 /**
- * Interface representing evaluation details of an entire section, including its sentences.
+ * export interface representing evaluation details of an entire section, including its sentences.
  */
-interface SectionEvaluation {
+export interface SectionEvaluation {
   index: number;
   title: string;
   sentence_evaluations: SentenceEvaluation[];
@@ -40,17 +40,17 @@ interface SectionEvaluation {
 }
 
 /**
- * Interface representing the overall article evaluation.
+ * export interface representing the overall article evaluation.
  */
-interface ArticleEvaluation {
+export interface ArticleEvaluation {
   requirement_evaluations: RequirementEvaluation[];
   meta_notes?: string | null;
 }
 
 /**
- * The main interface representing the entire evaluation data structure.
+ * The main export interface representing the entire evaluation data structure.
  */
-interface EvaluationData {
+export interface EvaluationData {
   sections: SectionEvaluation[];
   article_evaluation: ArticleEvaluation;
 }
@@ -65,7 +65,7 @@ interface EvaluationData {
  * @param sectionIndex - The index of the section to retrieve.
  * @returns The `SectionEvaluation` object if found, or `undefined` if not found.
  */
-function getSectionByIndex(
+export function getSectionByIndex(
   data: EvaluationData,
   sectionIndex: number
 ): SectionEvaluation | undefined {
@@ -79,7 +79,7 @@ function getSectionByIndex(
  * @param sentenceIndex - The index of the sentence to retrieve.
  * @returns The `SentenceEvaluation` object if found, or `undefined` if not found.
  */
-function getSentenceByIndex(
+export function getSentenceByIndex(
   data: EvaluationData,
   sectionIndex: number,
   sentenceIndex: number
@@ -98,7 +98,7 @@ function getSentenceByIndex(
  * @param requirementId - The ID of the requirement to retrieve.
  * @returns The requirement evaluation if found, or undefined otherwise.
  */
-function getRequirementEvaluationForSentence(
+export function getRequirementEvaluationForSentence(
   data: EvaluationData,
   sectionIndex: number,
   sentenceIndex: number,
@@ -117,7 +117,7 @@ function getRequirementEvaluationForSentence(
  * @param requirementId - The ID of the requirement to retrieve evaluations for.
  * @returns An array of requirement evaluations for the specified requirement, which may be empty if none are found.
  */
-function getRequirementEvaluationsForSection(
+export function getRequirementEvaluationsForSection(
   data: EvaluationData,
   sectionIndex: number,
   requirementId: string
@@ -156,7 +156,7 @@ function getRequirementEvaluationsForSection(
  * @param sectionIndex - The index of the section to compute the score for.
  * @returns The average score for the section, or 0 if there are no scores.
  */
-function getSectionAggregateScore(
+export function getSectionAggregateScore(
   data: EvaluationData,
   sectionIndex: number
 ): number {
@@ -190,7 +190,7 @@ function getSectionAggregateScore(
  * @param sentenceIndex - The index of the sentence to compute the score for.
  * @returns The average score for the sentence, or 0 if there are no scores.
  */
-function getSentenceAggregateScore(
+export function getSentenceAggregateScore(
   data: EvaluationData,
   sectionIndex: number,
   sentenceIndex: number
@@ -213,7 +213,7 @@ function getSentenceAggregateScore(
  * @param data - The entire evaluation data structure.
  * @returns The average score for the entire article, or 0 if there are no sections.
  */
-function getOverallArticleScore(data: EvaluationData): number {
+export function getOverallArticleScore(data: EvaluationData): number {
   if (data.sections.length === 0) return 0;
 
   const sectionScores = data.sections.map((section) =>
@@ -233,7 +233,7 @@ function getOverallArticleScore(data: EvaluationData): number {
  * @param requirementId - The ID of the requirement to calculate the average score for.
  * @returns The average score for the specified requirement in the given section, or 0 if not applicable.
  */
-function getAverageScoreForRequirementInSection(
+export function getAverageScoreForRequirementInSection(
   data: EvaluationData,
   sectionIndex: number,
   requirementId: string
@@ -256,7 +256,7 @@ function getAverageScoreForRequirementInSection(
  * @param requirementId - The ID of the requirement to calculate the average score for.
  * @returns The average score for the specified requirement across the article, or 0 if not applicable.
  */
-function getAverageScoreForRequirementInArticle(
+export function getAverageScoreForRequirementInArticle(
   data: EvaluationData,
   requirementId: string
 ): number {
@@ -294,7 +294,7 @@ function getAverageScoreForRequirementInArticle(
  * @param sentenceIndex - The index of the sentence to retrieve requirements from.
  * @returns An array of `RequirementEvaluation` objects for the specified sentence.
  */
-function getAllRequirementsForSentence(
+export function getAllRequirementsForSentence(
   data: EvaluationData,
   sectionIndex: number,
   sentenceIndex: number
@@ -309,7 +309,7 @@ function getAllRequirementsForSentence(
  * @param sectionIndex - The index of the section to retrieve requirements from.
  * @returns An array of `RequirementEvaluation` objects for the specified section and its sentences.
  */
-function getAllRequirementsForSection(
+export function getAllRequirementsForSection(
   data: EvaluationData,
   sectionIndex: number
 ): RequirementEvaluation[] {
@@ -332,7 +332,7 @@ function getAllRequirementsForSection(
  * @param data - The entire evaluation data structure.
  * @returns An array of `RequirementEvaluation` objects for the entire article.
  */
-function getAllRequirementsForArticle(
+export function getAllRequirementsForArticle(
   data: EvaluationData
 ): RequirementEvaluation[] {
   const evaluations: RequirementEvaluation[] = [
@@ -353,7 +353,7 @@ function getAllRequirementsForArticle(
  * 5. Example Usage of the Utility Functions
  * ------------------------------------- */
 
-// Assume `evaluationData` is your JSON data parsed into the `EvaluationData` interface
+// Assume `evaluationData` is your JSON data parsed into the `EvaluationData` export interface
 // For demonstration, let's create a minimal example (replace with your actual data):
 
 const evaluationData: EvaluationData = {
