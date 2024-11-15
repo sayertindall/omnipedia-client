@@ -55,6 +55,22 @@ export interface EvaluationData {
   article_evaluation: ArticleEvaluation;
 }
 
+export interface Requirement {
+  id: string;
+  description: string;
+  reference: string;
+  category: string;
+  classification: string;
+  where: string;
+  when: string;
+}
+
+export interface RequirementsData {
+  groups: {
+    [key: string]: Requirement[];
+  };
+}
+
 /* -------------------------------------
  * 2. Data Retrieval Utility Functions
  * ------------------------------------- */
@@ -69,6 +85,7 @@ export function getSectionByIndex(
   data: EvaluationData,
   sectionIndex: number
 ): SectionEvaluation | undefined {
+  // Adjust for 1-based indexing in the data
   return data.sections.find((section) => section.index === sectionIndex);
 }
 
@@ -85,7 +102,10 @@ export function getSentenceByIndex(
   sentenceIndex: number
 ): SentenceEvaluation | undefined {
   const section = getSectionByIndex(data, sectionIndex);
-  return section?.sentence_evaluations.find(
+  if (!section) return undefined;
+  
+  // Find sentence by index
+  return section.sentence_evaluations.find(
     (sentence) => sentence.index === sentenceIndex
   );
 }
@@ -316,6 +336,7 @@ export function getAllRequirementsForSection(
   const section = getSectionByIndex(data, sectionIndex);
   if (!section) return [];
 
+  // Combine section-level and sentence-level evaluations
   const evaluations: RequirementEvaluation[] = [
     ...section.requirement_evaluations,
   ];
@@ -324,7 +345,8 @@ export function getAllRequirementsForSection(
     evaluations.push(...sentence.requirement_evaluations);
   });
 
-  return evaluations;
+  // Remove duplicates based on requirement_id
+  return _.uniqBy(evaluations, 'requirement_id');
 }
 
 /**
@@ -346,7 +368,70 @@ export function getAllRequirementsForArticle(
     });
   });
 
-  return evaluations;
+  // Remove duplicates based on requirement_id
+  return _.uniqBy(evaluations, 'requirement_id');
+}
+
+/**
+ * Merges requirement details with evaluation data
+ */
+export function mergeRequirementWithEvaluation(
+  evaluation: RequirementEvaluation,
+  requirementsData: RequirementsData
+): RequirementEvaluation & Partial<Requirement> {
+  let requirement: Requirement | undefined;
+
+  // Search through all groups for the matching requirement
+  Object.values(requirementsData.groups).forEach((requirements) => {
+    const found = requirements.find((r) => r.id === evaluation.requirement_id);
+    if (found) {
+      requirement = found;
+    }
+  });
+
+  return {
+    ...evaluation,
+    description: requirement?.description || '',
+    reference: requirement?.reference || '',
+    where: requirement?.where || '',
+    when: requirement?.when || '',
+  };
+}
+
+/**
+ * Enhanced version of getAllRequirementsForSection that includes full requirement details
+ */
+export function getEnhancedRequirementsForSection(
+  data: EvaluationData,
+  sectionIndex: number,
+  requirementsData: RequirementsData
+): (RequirementEvaluation & Partial<Requirement>)[] {
+  const evaluations = getAllRequirementsForSection(data, sectionIndex);
+  return evaluations.map((evaluation) => mergeRequirementWithEvaluation(evaluation, requirementsData));
+}
+
+/**
+ * Enhanced version of getAllRequirementsForSentence that includes full requirement details
+ */
+export function getEnhancedRequirementsForSentence(
+  data: EvaluationData,
+  sectionIndex: number,
+  sentenceIndex: number,
+  requirementsData: RequirementsData
+): (RequirementEvaluation & Partial<Requirement>)[] {
+  const evaluations = getAllRequirementsForSentence(data, sectionIndex, sentenceIndex);
+  return evaluations.map((evaluation) => mergeRequirementWithEvaluation(evaluation, requirementsData));
+}
+
+/**
+ * Enhanced version of getAllRequirementsForArticle that includes full requirement details
+ */
+export function getEnhancedRequirementsForArticle(
+  data: EvaluationData,
+  requirementsData: RequirementsData
+): (RequirementEvaluation & Partial<Requirement>)[] {
+  const evaluations = getAllRequirementsForArticle(data);
+  return evaluations.map((evaluation) => mergeRequirementWithEvaluation(evaluation, requirementsData));
 }
 
 /* -------------------------------------

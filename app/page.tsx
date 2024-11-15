@@ -4,8 +4,12 @@ import { useState } from "react";
 import { ArticleRenderer } from "@/components/ArticleRenderer";
 import { SidePanel } from "@/components/SidePanel";
 import { HighlightToggle } from "@/components/HighlightToggle";
+import { RequirementViewer } from "@/components/ReqsView";
+// import { RequirementViewer } from "@/components/RequirementViewer";
+import { Button } from "@/components/ui/button";
 import useSWR from "swr";
 import { EvaluationData } from "@/lib/eval";
+import { cn } from "@/lib/utils";
 
 export default function Page() {
   const [selectedText, setSelectedText] = useState<string | null>(null);
@@ -14,6 +18,8 @@ export default function Page() {
   >(null);
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
   const [highlightEnabled, setHighlightEnabled] = useState(true);
+  const [showRequirements, setShowRequirements] = useState(false);
+  const [focusedRequirement, setFocusedRequirement] = useState<string>();
   const [selectedEvaluation, setSelectedEvaluation] = useState<{
     type: "section" | "sentence" | "article" | null;
     data: EvaluationData | null;
@@ -58,19 +64,40 @@ export default function Page() {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="mb-4">
+      <div className="mb-4 flex justify-between items-center">
         <HighlightToggle
           enabled={highlightEnabled}
           onToggle={() => setHighlightEnabled(!highlightEnabled)}
         />
+        <Button
+          variant="outline"
+          onClick={() => {
+            setShowRequirements(!showRequirements);
+          }}
+        >
+          {showRequirements ? "Hide Requirements" : "View Requirements"}
+        </Button>
       </div>
 
-      <ArticleRenderer
-        articleData={data.article}
-        evaluationData={data.evaluation}
-        onElementClick={handleElementClick}
-        highlightEnabled={highlightEnabled}
-      />
+      <div className="flex gap-4">
+        <div className={cn("flex-1", showRequirements ? "w-2/3" : "w-full")}>
+          <ArticleRenderer
+            articleData={data.article}
+            evaluationData={data.evaluation}
+            onElementClick={handleElementClick}
+            highlightEnabled={highlightEnabled}
+          />
+        </div>
+
+        {showRequirements && (
+          <div className="w-1/3 h-[calc(100vh-8rem)] sticky top-4">
+            <RequirementViewer
+              focusedId={focusedRequirement}
+              onRequirementClick={(id) => setFocusedRequirement(id)}
+            />
+          </div>
+        )}
+      </div>
 
       <SidePanel
         isOpen={isSidePanelOpen}
