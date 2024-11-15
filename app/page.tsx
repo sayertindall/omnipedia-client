@@ -34,10 +34,6 @@ export default function Page() {
     sectionIdx: number,
     sentenceIdx?: number
   ) => {
-    console.log("type: ", type);
-    console.log("sectionIdx: ", sectionIdx);
-    console.log("sentenceIdx: ", sentenceIdx);
-
     if (!data || !data.evaluation) return;
 
     // Adjusting indices to match one-based indexing used in evaluation data
