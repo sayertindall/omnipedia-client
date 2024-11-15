@@ -3,7 +3,7 @@ import { getData } from "@/lib/getData";
 
 export const runtime = "edge";
 
-export async function GET(request: Request) {
+export async function GET() {
   const data = await getData();
 
   if (data === null) {
