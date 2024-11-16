@@ -142,7 +142,9 @@ export default function Page() {
             {data && (
               <ArticleRenderer
                 articleData={data[selectedSource].article}
-                evaluationData={data[selectedSource].evaluation}
+                evaluationData={convertCacheToEvalData(
+                  data[selectedSource].evaluation
+                )}
                 highlightEnabled={highlightEnabled}
                 onElementClick={handleElementClick}
               />
