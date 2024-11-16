@@ -123,18 +123,6 @@
           "reasoning_detail": "Fully adheres to the scope definition."
         },
         {
-          "requirement_id": "R2",
-          "requirement_category": "Content",
-          "classification": "Contextual Considerations",
-          "applicable": false,
-          "applicability_reasoning": "No paralogs in humans are mentioned in the article.",
-          "reasoning": "The article does not discuss paralogs, making the creation of a gene family article non-applicable.",
-          "score": null,
-          "confidence": null,
-          "evidence": "",
-          "reasoning_detail": ""
-        },
-        {
           "requirement_id": "R25",
           "requirement_category": "Structure",
           "classification": "Imperative Standards",
@@ -169,18 +157,6 @@
           "confidence": 1.0,
           "evidence": "No listing of authors' qualifications in the content.",
           "reasoning_detail": "Fully adheres to the requirement."
-        },
-        {
-          "requirement_id": "R4",
-          "requirement_category": "Content",
-          "classification": "Best Practices",
-          "applicable": false,
-          "applicability_reasoning": "No notable contributions or discoverers mentioned.",
-          "reasoning": "The article lacks a History/Discovery section.",
-          "score": null,
-          "confidence": null,
-          "evidence": "",
-          "reasoning_detail": ""
         },
         {
           "requirement_id": "R5",
@@ -451,18 +427,6 @@
         "reasoning_detail": "Fully adheres to the scope definition."
       },
       {
-        "requirement_id": "R2",
-        "requirement_category": "Content",
-        "classification": "Contextual Considerations",
-        "applicable": false,
-        "applicability_reasoning": "No paralogs in humans are mentioned in the article.",
-        "reasoning": "The article does not discuss paralogs, making the creation of a gene family article non-applicable.",
-        "score": null,
-        "confidence": null,
-        "evidence": "",
-        "reasoning_detail": ""
-      },
-      {
         "requirement_id": "R3",
         "requirement_category": "Content",
         "classification": "Imperative Standards",
@@ -473,18 +437,6 @@
         "confidence": 1.0,
         "evidence": "No listing of authors' qualifications in the content.",
         "reasoning_detail": "Fully adheres to the requirement."
-      },
-      {
-        "requirement_id": "R4",
-        "requirement_category": "Content",
-        "classification": "Best Practices",
-        "applicable": false,
-        "applicability_reasoning": "No notable contributions or discoverers mentioned.",
-        "reasoning": "The article lacks a History/Discovery section.",
-        "score": null,
-        "confidence": null,
-        "evidence": "",
-        "reasoning_detail": ""
       },
       {
         "requirement_id": "R5",
@@ -534,30 +486,7 @@
         "evidence": "Correct and non-redundant usage of gene symbols.",
         "reasoning_detail": "Fully meets the requirement."
       },
-      {
-        "requirement_id": "R9",
-        "requirement_category": "Naming",
-        "classification": "Best Practices",
-        "applicable": false,
-        "applicability_reasoning": "Article title uses the gene symbol, which is appropriate.",
-        "reasoning": "The title 'B3GAT1' follows naming conventions by using the official gene symbol.",
-        "score": null,
-        "confidence": null,
-        "evidence": "",
-        "reasoning_detail": ""
-      },
-      {
-        "requirement_id": "R10",
-        "requirement_category": "Naming",
-        "classification": "Best Practices",
-        "applicable": false,
-        "applicability_reasoning": "Article title is concise and does not require disambiguation.",
-        "reasoning": "No need to add '(gene)' as the title is clear.",
-        "score": null,
-        "confidence": null,
-        "evidence": "",
-        "reasoning_detail": ""
-      },
+
       {
         "requirement_id": "R15",
         "requirement_category": "Infoboxes",

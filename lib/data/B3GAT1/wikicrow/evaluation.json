@@ -9,7 +9,7 @@
           "sentence": "The B3GAT1 gene encodes the enzyme beta-1,3-glucuronyltransferase 1, which is a glycosyltransferase involved in the biosynthesis of glycosaminoglycans and the human natural killer 1 (HNK-1) glycan.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -21,7 +21,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -33,7 +33,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names and abbreviations."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -45,7 +45,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "25",
+              "requirement_id": "R25",
               "requirement_category": "Structure",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -64,7 +64,7 @@
           "sentence": "This enzyme is crucial for the formation of glycan structures that are integral to the extracellular matrix and cell surface molecules, influencing processes such as cell signaling, adhesion, and migration (Trimarco2022Cellular; Huffman2011Polymorphisms).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -76,7 +76,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -88,7 +88,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene abbreviations."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -107,7 +107,7 @@
           "sentence": "Beta-1,3-glucuronyltransferase 1 operates within the Golgi apparatus, where it facilitates the transfer of glucuronic acid to glycoproteins, thereby playing a significant role in cellular communication and tissue development (Huffman2011Polymorphisms).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -119,7 +119,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -131,7 +131,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize full gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -150,7 +150,7 @@
           "sentence": "The enzyme's activity is also linked to neural functions, particularly in learning and memory, through its involvement in the biosynthesis of the HNK-1 glycan (Hashimoto2020Regionspecific).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -162,7 +162,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -174,7 +174,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene abbreviations."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -193,7 +193,7 @@
           "sentence": "Additionally, B3GAT1 has been implicated in immune responses and antiviral defense mechanisms, highlighting its potential clinical significance (Trimarco2022Cellular).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -205,7 +205,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -217,7 +217,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -234,7 +234,7 @@
       ],
       "requirement_evaluations": [
         {
-          "requirement_id": "3",
+          "requirement_id": "R3",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -246,7 +246,7 @@
           "reasoning_detail": "Fully meets the requirement."
         },
         {
-          "requirement_id": "5",
+          "requirement_id": "R5",
           "requirement_category": "Language Usage",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -258,7 +258,7 @@
           "reasoning_detail": "Does not comply with the requirement to italicize gene names and abbreviations."
         },
         {
-          "requirement_id": "7",
+          "requirement_id": "R7",
           "requirement_category": "Language Usage",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -270,7 +270,7 @@
           "reasoning_detail": "Fully meets the requirement."
         },
         {
-          "requirement_id": "25",
+          "requirement_id": "R25",
           "requirement_category": "Structure",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -293,7 +293,7 @@
           "sentence": "The B3GAT1 gene encodes the enzyme beta-1,3-glucuronyltransferase 1, which plays a crucial role in the biosynthesis of glycosaminoglycans, such as heparan sulfate and chondroitin sulfate.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -305,7 +305,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -317,7 +317,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -336,7 +336,7 @@
           "sentence": "These molecules are essential components of the extracellular matrix and cell surface molecules, contributing to cell signaling, adhesion, and migration (Huffman2011Polymorphisms).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -355,7 +355,7 @@
           "sentence": "The enzyme is active in the Golgi apparatus, where it catalyzes the transfer of glucuronic acid to glycoproteins, influencing cellular communication and tissue development (Huffman2011Polymorphisms).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -367,7 +367,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -379,7 +379,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize full gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -398,7 +398,7 @@
           "sentence": "B3GAT1 is also involved in the biosynthesis of the human natural killer 1 (HNK-1) glycan, a carbohydrate epitope expressed on a subset of human lymphocytes, including natural killer cells.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -410,7 +410,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -422,7 +422,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene abbreviations."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -441,7 +441,7 @@
           "sentence": "This process involves the addition of glucuronic acid to the terminal N-acetyllactosamine disaccharide, forming the HNK-1 epitope precursor (Trimarco2022Cellular; Huffman2011Polymorphisms).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -453,7 +453,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -465,7 +465,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene abbreviations."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -484,7 +484,7 @@
           "sentence": "The HNK-1 glycan is significant in neural functions, particularly in the brain, where it is involved in learning and memory (Hashimoto2020Regionspecific).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -496,7 +496,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -508,7 +508,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene abbreviations."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -527,7 +527,7 @@
           "sentence": "In the context of viral infections, B3GAT1 modifies cell surface glycans, reducing sialic acid expression, which is a key receptor for viruses like influenza.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -539,7 +539,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -551,7 +551,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -570,7 +570,7 @@
           "sentence": "This modification restricts viral entry, highlighting B3GAT1's potential role in antiviral defense (Trimarco2022Cellular).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -582,7 +582,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -594,7 +594,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -611,7 +611,7 @@
       ],
       "requirement_evaluations": [
         {
-          "requirement_id": "3",
+          "requirement_id": "R3",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -623,7 +623,7 @@
           "reasoning_detail": "Fully meets the requirement."
         },
         {
-          "requirement_id": "5",
+          "requirement_id": "R5",
           "requirement_category": "Language Usage",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -635,7 +635,7 @@
           "reasoning_detail": "Does not comply with the requirement to italicize gene names and abbreviations."
         },
         {
-          "requirement_id": "7",
+          "requirement_id": "R7",
           "requirement_category": "Language Usage",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -647,7 +647,7 @@
           "reasoning_detail": "Fully meets the requirement."
         },
         {
-          "requirement_id": "30",
+          "requirement_id": "R30",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -670,7 +670,7 @@
           "sentence": "B3GAT1, also known as beta-1,3-glucuronyltransferase 1, has been implicated in various clinical conditions due to alterations in its expression levels.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -682,7 +682,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -694,7 +694,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names and abbreviations."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -713,7 +713,7 @@
           "sentence": "In the context of viral infections, B3GAT1 overexpression has been shown to restrict influenza virus infection by modifying cell surface glycans, thereby preventing viral entry.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -725,7 +725,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -737,7 +737,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -756,7 +756,7 @@
           "sentence": "This suggests its potential as a target for antiviral therapies, although the clinical application of this strategy requires further investigation to address challenges such as the method of B3GAT1 induction and potential immune responses (Trimarco2022Cellular).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -768,7 +768,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -780,7 +780,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -799,7 +799,7 @@
           "sentence": "In allergic conditions, particularly insect venom allergy (IVA) in patients with mastocytosis, B3GAT1 expression is significantly lower in those experiencing anaphylaxis.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -811,7 +811,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -823,7 +823,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -842,7 +842,7 @@
           "sentence": "This underexpression may be linked to immune response alterations, indicating a potential role in immune dysfunction and allergic reactions (G\u00c3\u00b3rska2016The).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -861,7 +861,7 @@
           "sentence": "Additionally, genetic studies have identified polymorphisms in B3GAT1 associated with variations in glycosylation traits, which could influence immune function and disease susceptibility.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -873,7 +873,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -885,7 +885,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -904,7 +904,7 @@
           "sentence": "However, the specific clinical significance of these polymorphisms in diseases remains to be fully elucidated (Huffman2011Polymorphisms).",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -923,7 +923,7 @@
           "sentence": "Overall, B3GAT1's role in disease is complex and involves its function in glycan biosynthesis and immune regulation.",
           "requirement_evaluations": [
             {
-              "requirement_id": "3",
+              "requirement_id": "R3",
               "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -935,7 +935,7 @@
               "reasoning_detail": "Fully complies with the requirement."
             },
             {
-              "requirement_id": "5",
+              "requirement_id": "R5",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -947,7 +947,7 @@
               "reasoning_detail": "Does not comply with the requirement to italicize gene names."
             },
             {
-              "requirement_id": "7",
+              "requirement_id": "R7",
               "requirement_category": "Language Usage",
               "classification": "Imperative Standards",
               "applicable": true,
@@ -964,7 +964,7 @@
       ],
       "requirement_evaluations": [
         {
-          "requirement_id": "3",
+          "requirement_id": "R3",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -976,7 +976,7 @@
           "reasoning_detail": "Fully meets the requirement."
         },
         {
-          "requirement_id": "5",
+          "requirement_id": "R5",
           "requirement_category": "Language Usage",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -988,7 +988,7 @@
           "reasoning_detail": "Does not comply with the requirement to italicize gene names and abbreviations."
         },
         {
-          "requirement_id": "7",
+          "requirement_id": "R7",
           "requirement_category": "Language Usage",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -1000,7 +1000,7 @@
           "reasoning_detail": "Fully meets the requirement."
         },
         {
-          "requirement_id": "30",
+          "requirement_id": "R30",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -1012,7 +1012,7 @@
           "reasoning_detail": "Fully meets the requirement."
         },
         {
-          "requirement_id": "32",
+          "requirement_id": "R32",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
@@ -1030,7 +1030,7 @@
   "article_evaluation": {
     "requirement_evaluations": [
       {
-        "requirement_id": "1",
+        "requirement_id": "R1",
         "requirement_category": "Content",
         "classification": "Contextual Considerations",
         "applicable": true,
@@ -1042,7 +1042,7 @@
         "reasoning_detail": "Fully adheres to the scope requirement."
       },
       {
-        "requirement_id": "2",
+        "requirement_id": "R2",
         "requirement_category": "Content",
         "classification": "Contextual Considerations",
         "applicable": false,
@@ -1054,7 +1054,7 @@
         "reasoning_detail": "Not applicable; no score assigned."
       },
       {
-        "requirement_id": "9",
+        "requirement_id": "R9",
         "requirement_category": "Content",
         "classification": "Best Practices",
         "applicable": true,
@@ -1066,7 +1066,7 @@
         "reasoning_detail": "Fully adheres to the best practice for article naming."
       },
       {
-        "requirement_id": "10",
+        "requirement_id": "R10",
         "requirement_category": "Content",
         "classification": "Best Practices",
         "applicable": false,
@@ -1078,7 +1078,7 @@
         "reasoning_detail": "Not applicable; no score assigned."
       },
       {
-        "requirement_id": "15",
+        "requirement_id": "R15",
         "requirement_category": "Infoboxes",
         "classification": "Imperative Standards",
         "applicable": true,
@@ -1090,7 +1090,7 @@
         "reasoning_detail": "Fully complies with the requirement."
       },
       {
-        "requirement_id": "25",
+        "requirement_id": "R25",
         "requirement_category": "Structure",
         "classification": "Imperative Standards",
         "applicable": true,
@@ -1102,7 +1102,7 @@
         "reasoning_detail": "Fully adheres to the requirement."
       },
       {
-        "requirement_id": "34",
+        "requirement_id": "R34",
         "requirement_category": "Structure",
         "classification": "Imperative Standards",
         "applicable": true,
