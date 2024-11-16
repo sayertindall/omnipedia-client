@@ -2,6 +2,8 @@
  * 1. Data Structure Interfaces
  * ------------------------------------- */
 
+import { uniqBy } from "lodash";
+
 /**
  * export interface representing a single requirement evaluation.
  */
@@ -103,7 +105,7 @@ export function getSentenceByIndex(
 ): SentenceEvaluation | undefined {
   const section = getSectionByIndex(data, sectionIndex);
   if (!section) return undefined;
-  
+
   // Find sentence by index
   return section.sentence_evaluations.find(
     (sentence) => sentence.index === sentenceIndex
@@ -346,7 +348,7 @@ export function getAllRequirementsForSection(
   });
 
   // Remove duplicates based on requirement_id
-  return _.uniqBy(evaluations, 'requirement_id');
+  return uniqBy(evaluations, "requirement_id");
 }
 
 /**
@@ -369,7 +371,7 @@ export function getAllRequirementsForArticle(
   });
 
   // Remove duplicates based on requirement_id
-  return _.uniqBy(evaluations, 'requirement_id');
+  return uniqBy(evaluations, "requirement_id");
 }
 
 /**
@@ -391,10 +393,10 @@ export function mergeRequirementWithEvaluation(
 
   return {
     ...evaluation,
-    description: requirement?.description || '',
-    reference: requirement?.reference || '',
-    where: requirement?.where || '',
-    when: requirement?.when || '',
+    description: requirement?.description || "",
+    reference: requirement?.reference || "",
+    where: requirement?.where || "",
+    when: requirement?.when || "",
   };
 }
 
@@ -407,7 +409,9 @@ export function getEnhancedRequirementsForSection(
   requirementsData: RequirementsData
 ): (RequirementEvaluation & Partial<Requirement>)[] {
   const evaluations = getAllRequirementsForSection(data, sectionIndex);
-  return evaluations.map((evaluation) => mergeRequirementWithEvaluation(evaluation, requirementsData));
+  return evaluations.map((evaluation) =>
+    mergeRequirementWithEvaluation(evaluation, requirementsData)
+  );
 }
 
 /**
@@ -419,8 +423,14 @@ export function getEnhancedRequirementsForSentence(
   sentenceIndex: number,
   requirementsData: RequirementsData
 ): (RequirementEvaluation & Partial<Requirement>)[] {
-  const evaluations = getAllRequirementsForSentence(data, sectionIndex, sentenceIndex);
-  return evaluations.map((evaluation) => mergeRequirementWithEvaluation(evaluation, requirementsData));
+  const evaluations = getAllRequirementsForSentence(
+    data,
+    sectionIndex,
+    sentenceIndex
+  );
+  return evaluations.map((evaluation) =>
+    mergeRequirementWithEvaluation(evaluation, requirementsData)
+  );
 }
 
 /**
@@ -431,7 +441,9 @@ export function getEnhancedRequirementsForArticle(
   requirementsData: RequirementsData
 ): (RequirementEvaluation & Partial<Requirement>)[] {
   const evaluations = getAllRequirementsForArticle(data);
-  return evaluations.map((evaluation) => mergeRequirementWithEvaluation(evaluation, requirementsData));
+  return evaluations.map((evaluation) =>
+    mergeRequirementWithEvaluation(evaluation, requirementsData)
+  );
 }
 
 /* -------------------------------------

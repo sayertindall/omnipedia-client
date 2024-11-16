@@ -9,7 +9,7 @@ import { RequirementViewer } from "@/components/ReqsView";
 import { Button } from "@/components/ui/button";
 import useSWR from "swr";
 import { EvaluationData } from "@/lib/eval";
-import { cn } from "@/lib/utils";
+import { InfoBox } from "@/components/InfoBox";
 
 export default function Page() {
   const [selectedText, setSelectedText] = useState<string | null>(null);
@@ -62,41 +62,55 @@ export default function Page() {
   if (error) return <div>Error loading data</div>;
   if (!data) return <div>Loading...</div>;
 
-  return (
-    <div className="container mx-auto p-4">
-      <div className="mb-4 flex justify-between items-center">
-        <HighlightToggle
-          enabled={highlightEnabled}
-          onToggle={() => setHighlightEnabled(!highlightEnabled)}
+  if (showRequirements) {
+    return (
+      <div className="min-h-screen">
+        <div className="fixed top-4 right-4 z-50">
+          <Button variant="outline" onClick={() => setShowRequirements(false)}>
+            Back to Article
+          </Button>
+        </div>
+        <RequirementViewer
+          focusedId={focusedRequirement}
+          onRequirementClick={(id) => setFocusedRequirement(id)}
         />
-        <Button
-          variant="outline"
-          onClick={() => {
-            setShowRequirements(!showRequirements);
-          }}
-        >
-          {showRequirements ? "Hide Requirements" : "View Requirements"}
-        </Button>
       </div>
+    );
+  }
 
-      <div className="flex gap-4">
-        <div className={cn("flex-1", showRequirements ? "w-2/3" : "w-full")}>
-          <ArticleRenderer
-            articleData={data.article}
-            evaluationData={data.evaluation}
-            onElementClick={handleElementClick}
-            highlightEnabled={highlightEnabled}
-          />
+  return (
+    <div className="container ml-10 p-4">
+      <Button
+        variant="outline"
+        onClick={() => {
+          setShowRequirements(true);
+          setSidePanelOpen(false);
+        }}
+      >
+        View Requirements
+      </Button>
+
+      <div className="flex gap-8 mt-32">
+        <div className="w-[400px] shrink-0">
+          <InfoBox />
         </div>
 
-        {showRequirements && (
-          <div className="w-1/3 h-[calc(100vh-8rem)] sticky top-4">
-            <RequirementViewer
-              focusedId={focusedRequirement}
-              onRequirementClick={(id) => setFocusedRequirement(id)}
+        <div className="flex-1">
+          <div className="space-y-4">
+            <div className="flex justify-end mr-[8em]">
+              <HighlightToggle
+                enabled={highlightEnabled}
+                onToggle={() => setHighlightEnabled(!highlightEnabled)}
+              />
+            </div>
+            <ArticleRenderer
+              articleData={data.article}
+              evaluationData={data.evaluation}
+              onElementClick={handleElementClick}
+              highlightEnabled={highlightEnabled}
             />
           </div>
-        )}
+        </div>
       </div>
 
       <SidePanel

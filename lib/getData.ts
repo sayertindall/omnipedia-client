@@ -1,5 +1,5 @@
-import articleData from "./data/article.json";
-import evaluationData from "./data/evaluation.json";
+import articleData from "./data/ABCC11/article.json";
+import evaluationData from "./data/ABCC11/evaluation.json";
 import requirementsData from "./data/requirements.json";
 
 export const getData = () => {
