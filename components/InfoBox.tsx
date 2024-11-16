@@ -36,7 +36,7 @@ export const InfoBox = () => {
             <ul className="space-y-2 ml-4">
               <li className="text-sm">
                 <span className="font-medium">Section Headers:</span> Click any
-                section header (like "ABCC11" or "Function") to see
+                section header (like &quot;ABCC11&quot; or &quot;Function&quot;) to see
                 section-level evaluation results
               </li>
               <li className="text-sm">

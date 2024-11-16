@@ -16,6 +16,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import requirementsData from "@/lib/data/requirements.json";
 
 export interface Requirement {
   id: string;
@@ -232,7 +233,7 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
   }>({});
 
   const groupedRequirements = useMemo(() => {
-    const requirements = require("@/lib/data/requirements.json") as {
+    const requirements = requirementsData as {
       groups: {
         [category: string]: Requirement[];
       };
