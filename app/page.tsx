@@ -5,11 +5,17 @@ import { ArticleRenderer } from "@/components/ArticleRenderer";
 import { SidePanel } from "@/components/SidePanel";
 import { HighlightToggle } from "@/components/HighlightToggle";
 import { RequirementViewer } from "@/components/ReqsView";
-// import { RequirementViewer } from "@/components/RequirementViewer";
 import { Button } from "@/components/ui/button";
-import useSWR from "swr";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { EvaluationData } from "@/lib/eval";
 import { InfoBox } from "@/components/InfoBox";
+import { getData } from "@/lib/loader";
 
 export default function Page() {
   const [selectedText, setSelectedText] = useState<string | null>(null);
@@ -26,13 +32,14 @@ export default function Page() {
     sectionIndex?: number;
     sentenceIndex?: number;
   }>({ type: null, data: null });
+  const [selectedSource, setSelectedSource] = useState<
+    "wikipedia" | "wikicrow"
+  >("wikipedia");
+  const [selectedArticle, setSelectedArticle] = useState<string>("ABCC11");
 
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
-
-  const { data, error } = useSWR("/api/data", fetcher, {
-    revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-  });
+  // Get data using the loader
+  const data = getData(selectedArticle);
+  const error = !data;
 
   const handleElementClick = (
     text: string,
@@ -40,7 +47,7 @@ export default function Page() {
     sectionIdx: number,
     sentenceIdx?: number
   ) => {
-    if (!data || !data.evaluation) return;
+    if (!data || !data[selectedSource]?.evaluation) return;
 
     // Adjusting indices to match one-based indexing used in evaluation data
     const sectionDataIndex = sectionIdx + 1;
@@ -53,14 +60,13 @@ export default function Page() {
 
     setSelectedEvaluation({
       type,
-      data: data.evaluation, // Pass the full EvaluationData
+      data: data[selectedSource].evaluation,
       sectionIndex: sectionDataIndex,
       sentenceIndex: sentenceDataIndex,
     });
   };
 
   if (error) return <div>Error loading data</div>;
-  if (!data) return <div>Loading...</div>;
 
   if (showRequirements) {
     return (
@@ -79,36 +85,68 @@ export default function Page() {
   }
 
   return (
-    <div className="container ml-10 p-4">
-      <Button
-        variant="outline"
-        onClick={() => {
-          setShowRequirements(true);
-          setSidePanelOpen(false);
-        }}
-      >
-        View Requirements
-      </Button>
+    <div className="container ml-4 p-4">
+      <div className="flex justify-between items-center mb-4">
+        <div className="flex items-center gap-4">
+          <HighlightToggle
+            enabled={highlightEnabled}
+            onToggle={() => setHighlightEnabled(!highlightEnabled)}
+          />
+          <Select
+            value={selectedArticle}
+            onValueChange={(value: string) => setSelectedArticle(value)}
+          >
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Select article" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="ABCC11">ABCC11</SelectItem>
+              <SelectItem value="APRT">APRT</SelectItem>
+              <SelectItem value="B3GAT1">B3GAT1</SelectItem>
+              <SelectItem value="GRIA2">GRIA2</SelectItem>
+            </SelectContent>
+          </Select>
+          <Select
+            value={selectedSource}
+            onValueChange={(value: "wikipedia" | "wikicrow") =>
+              setSelectedSource(value)
+            }
+          >
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Select source" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="wikipedia">Wikipedia</SelectItem>
+              <SelectItem value="wikicrow">WikiCrow</SelectItem>
+            </SelectContent>
+          </Select>
+          <Button
+            variant="outline"
+            onClick={() => {
+              setShowRequirements(!showRequirements);
+              setSidePanelOpen(false);
+            }}
+          >
+            {showRequirements ? "Hide Requirements" : "View Requirements"}
+          </Button>
+        </div>
+      </div>
 
-      <div className="flex gap-8 mt-32">
+      <div className="flex gap-8 mt-8">
         <div className="w-[400px] shrink-0">
           <InfoBox />
         </div>
 
         <div className="flex-1">
           <div className="space-y-4">
-            <div className="flex justify-end mr-[8em]">
-              <HighlightToggle
-                enabled={highlightEnabled}
-                onToggle={() => setHighlightEnabled(!highlightEnabled)}
+            {data && (
+              <ArticleRenderer
+                articleData={data[selectedSource].article}
+                evaluationData={data[selectedSource].evaluation}
+                highlightEnabled={highlightEnabled}
+                onElementClick={handleElementClick}
               />
-            </div>
-            <ArticleRenderer
-              articleData={data.article}
-              evaluationData={data.evaluation}
-              onElementClick={handleElementClick}
-              highlightEnabled={highlightEnabled}
-            />
+            )}
           </div>
         </div>
       </div>

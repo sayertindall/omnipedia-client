@@ -6,13 +6,16 @@ import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 import ReactMarkdown from "react-markdown";
 import _ from "lodash";
 
 import {
   RequirementEvaluation,
-  Requirement,
-  RequirementsData,
   EvaluationData,
   getSectionAggregateScore,
   getSentenceAggregateScore,
@@ -41,8 +44,117 @@ interface ScoreStats {
   lowScore: number;
 }
 
+interface RequirementGroup {
+  description: string;
+  category: string;
+  requirements: Requirement[];
+}
+
+interface RequirementsData {
+  groups: { [key: string]: Requirement[] };
+}
+
+interface Requirement {
+  id: string;
+  description: string;
+  reference: string;
+  category: string;
+  classification: string;
+  where: string;
+  when: string;
+  level?: string;
+}
+
 type EnhancedRequirementEvaluation = RequirementEvaluation &
   Partial<Requirement>;
+
+// Function to get the description by requirement ID
+function getRequirementDescriptionById(id: string): string | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement.description;
+    }
+  }
+  return undefined;
+}
+
+// Function to get the reference by requirement ID
+function getRequirementReferenceById(id: string): string | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement.reference;
+    }
+  }
+  return undefined;
+}
+
+// Function to get the category by requirement ID
+function getRequirementCategoryById(id: string): string | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement.category;
+    }
+  }
+  return undefined;
+}
+
+// Function to get the classification by requirement ID
+function getRequirementClassificationById(id: string): string | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement.classification;
+    }
+  }
+  return undefined;
+}
+
+// Function to get the 'where' property by requirement ID
+function getRequirementWhereById(id: string): string | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement.where;
+    }
+  }
+  return undefined;
+}
+
+// Function to get the 'when' property by requirement ID
+function getRequirementWhenById(id: string): string | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement.when;
+    }
+  }
+  return undefined;
+}
+
+// Function to get the level by requirement ID
+function getRequirementLevelById(id: string): string | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement.level;
+    }
+  }
+  return undefined;
+}
+
+// Function to get the entire requirement object by ID
+function getRequirementById(id: string): any | undefined {
+  for (const group of requirementsData.groups) {
+    const requirement = group.requirements.find((req) => req.id === id);
+    if (requirement) {
+      return requirement;
+    }
+  }
+  return undefined;
+}
 
 export function SidePanel({
   isOpen,
@@ -55,14 +167,21 @@ export function SidePanel({
 }: SidePanelProps) {
   if (!isOpen || !evaluationData) return null;
 
+  // Transform requirements data to match expected format
+  const transformedRequirementsData = useMemo(() => {
+    const groupedReqs: { [key: string]: Requirement[] } = {};
+    (requirementsData as { groups: RequirementGroup[] }).groups.forEach(
+      (group) => {
+        groupedReqs[group.category] = group.requirements;
+      }
+    );
+    return { groups: groupedReqs };
+  }, []);
+
   // Memoize computations to prevent unnecessary recalculations
   const { overallScore, relevantEvaluations } = useMemo(() => {
     let score = 0;
     let evals: EnhancedRequirementEvaluation[] = [];
-
-    console.log("Selected Type:", selectedType);
-    console.log("Section Index:", sectionIndex);
-    console.log("Sentence Index:", sentenceIndex);
 
     try {
       if (selectedType === "section" && typeof sectionIndex === "number") {
@@ -70,9 +189,8 @@ export function SidePanel({
         evals = getEnhancedRequirementsForSection(
           evaluationData,
           sectionIndex,
-          requirementsData as RequirementsData
+          transformedRequirementsData
         );
-        console.log("Section Requirements:", evals);
       } else if (
         selectedType === "sentence" &&
         typeof sectionIndex === "number" &&
@@ -88,32 +206,37 @@ export function SidePanel({
           evaluationData,
           sectionIndex,
           sentenceIndex,
-          requirementsData as RequirementsData
+          transformedRequirementsData
         );
-        console.log("Sentence Requirements:", evals);
       } else if (selectedType === "article") {
         evals = getEnhancedRequirementsForArticle(
           evaluationData,
-          requirementsData as RequirementsData
+          transformedRequirementsData
         );
-        console.log("Article Requirements:", evals);
+
+        // Calculate article score as average of section scores
         if (evaluationData.sections.length > 0) {
           const sectionScores = evaluationData.sections.map((section) =>
             getSectionAggregateScore(evaluationData, section.index)
           );
-          score = (_.mean(sectionScores) || 0) * 100;
+          score = (_.sum(sectionScores) / sectionScores.length) * 100;
         }
       }
-
-      console.log("Final Score:", score);
-      console.log("Final Evaluations:", evals);
     } catch (error) {
       console.error("Error processing evaluations:", error);
-      return { overallScore: 0, relevantEvaluations: [] };
     }
 
-    return { overallScore: score, relevantEvaluations: evals };
-  }, [evaluationData, selectedType, sectionIndex, sentenceIndex]);
+    return {
+      overallScore: Math.round(score),
+      relevantEvaluations: evals,
+    };
+  }, [
+    selectedType,
+    sectionIndex,
+    sentenceIndex,
+    evaluationData,
+    transformedRequirementsData,
+  ]);
 
   // Memoize grouped evaluations
   const groupedEvaluations = useMemo(() => {
@@ -199,14 +322,14 @@ export function SidePanel({
                   <Progress
                     value={overallScore}
                     className="w-full"
-                    aria-label={`Overall score: ${overallScore.toFixed(1)}%`}
+                    aria-label={`Overall score: ${overallScore}%`}
                   />
                   <p
                     className={`text-2xl font-bold ${getScoreColor(
                       overallScore
                     )}`}
                   >
-                    {overallScore.toFixed(1)}%
+                    {overallScore}%
                   </p>
                   <div className="grid grid-cols-3 gap-2 text-center">
                     <div className="bg-green-50 p-2 rounded hover:bg-green-100 transition-colors">
@@ -306,8 +429,88 @@ export function SidePanel({
                       >
                         <AlertTitle className="flex items-center justify-between gap-2">
                           <div className="flex items-center gap-2">
-                            <span>Requirement {evaluation.requirement_id}</span>
-                            {getScoreBadge(evaluation.score)}
+                            <HoverCard>
+                              <HoverCardTrigger>
+                                <span className="cursor-pointer hover:text-blue-600">
+                                  {evaluation.requirement_id}
+                                </span>
+                              </HoverCardTrigger>
+                              <HoverCardContent
+                                side="right"
+                                align="start"
+                                className="w-[450px] p-4"
+                              >
+                                <div className="space-y-3">
+                                  <div>
+                                    <p className="text-sm font-semibold text-gray-500">
+                                      {evaluation.requirement_id} •{" "}
+                                      {getRequirementCategoryById(
+                                        evaluation.requirement_id
+                                      )}
+                                    </p>
+                                    <h4 className="font-medium mt-1">
+                                      {getRequirementDescriptionById(
+                                        evaluation.requirement_id
+                                      )}
+                                    </h4>
+                                  </div>
+
+                                  <div className="text-sm text-gray-600 space-y-2">
+                                    <p className="italic">
+                                      {getRequirementReferenceById(
+                                        evaluation.requirement_id
+                                      )}
+                                    </p>
+
+                                    <div className="grid grid-cols-2 gap-2 pt-2">
+                                      <div>
+                                        <p className="text-xs font-medium text-gray-500">
+                                          Classification
+                                        </p>
+                                        <p>
+                                          {getRequirementClassificationById(
+                                            evaluation.requirement_id
+                                          )}
+                                        </p>
+                                      </div>
+                                      <div>
+                                        <p className="text-xs font-medium text-gray-500">
+                                          Level
+                                        </p>
+                                        <p>
+                                          {getRequirementLevelById(
+                                            evaluation.requirement_id
+                                          )}
+                                        </p>
+                                      </div>
+                                      <div>
+                                        <p className="text-xs font-medium text-gray-500">
+                                          Where
+                                        </p>
+                                        <p>
+                                          {getRequirementWhereById(
+                                            evaluation.requirement_id
+                                          )}
+                                        </p>
+                                      </div>
+                                      <div>
+                                        <p className="text-xs font-medium text-gray-500">
+                                          When
+                                        </p>
+                                        <p>
+                                          {getRequirementWhenById(
+                                            evaluation.requirement_id
+                                          )}
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </HoverCardContent>
+                            </HoverCard>
+                            <div className="ml-6">
+                              {getScoreBadge(evaluation.score)}
+                            </div>
                           </div>
                           <Badge variant="outline" className="text-xs">
                             {evaluation.classification}

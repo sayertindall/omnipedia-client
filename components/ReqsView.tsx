@@ -28,11 +28,44 @@ export interface Requirement {
   when: string;
 }
 
+export interface RequirementEvaluation {
+  requirement_id: string;
+  requirement_category: string;
+  classification: string;
+  applicable: boolean;
+  applicability_reasoning: string;
+  score: number;
+  confidence: number;
+  evidence: string;
+  reasoning: string;
+}
+
+export interface SentenceEvaluation {
+  index: number;
+  sentence: string;
+  requirement_evaluations: RequirementEvaluation[];
+  meta_notes: string | null;
+}
+
+export interface SectionEvaluation {
+  index: number;
+  title: string;
+  sentence_evaluations: SentenceEvaluation[];
+  requirement_evaluations: RequirementEvaluation[];
+  meta_notes: string | null;
+}
+
+export interface ArticleEvaluation {
+  requirement_evaluations: RequirementEvaluation[];
+  meta_notes: string | null;
+}
+
 interface RequirementViewerProps {
   focusedId?: string;
   onRequirementClick?: (id: string) => void;
   isLoading?: boolean;
   error?: string;
+  evaluations?: RequirementEvaluation[];
 }
 
 interface CategoryProps {
@@ -48,6 +81,17 @@ interface CategoryProps {
   toggleRequirement: (id: string) => void;
   focusedId?: string;
   searchTerm: string;
+  evaluations?: RequirementEvaluation[];
+}
+
+interface RequirementGroup {
+  description: string;
+  category: string;
+  requirements: Requirement[];
+}
+
+interface RequirementsData {
+  groups: RequirementGroup[];
 }
 
 const getClassificationColor = (classification: string): string => {
@@ -66,7 +110,8 @@ const RequirementCard: React.FC<{
   isExpanded: boolean;
   onToggle: () => void;
   isFocused: boolean;
-}> = ({ requirement, isExpanded, onToggle, isFocused }) => (
+  evaluations?: RequirementEvaluation[];
+}> = ({ requirement, isExpanded, onToggle, isFocused, evaluations }) => (
   <Card
     className={cn(
       "border-l-4 transition-all",
@@ -100,6 +145,23 @@ const RequirementCard: React.FC<{
             When: {requirement.when}
           </Badge>
         </div>
+        {evaluations && (
+          <div>
+            {evaluations.map((evaluation) => (
+              <div key={evaluation.requirement_id}>
+                <Badge variant="secondary" className="text-xs">
+                  Applicable: {evaluation.applicable ? "Yes" : "No"}
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Score: {evaluation.score}
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Confidence: {evaluation.confidence}
+                </Badge>
+              </div>
+            ))}
+          </div>
+        )}
       </CardContent>
     </CollapsibleContent>
   </Card>
@@ -116,6 +178,7 @@ const CategorySection: React.FC<CategoryProps> = ({
   toggleRequirement,
   focusedId,
   searchTerm,
+  evaluations,
 }) => {
   const filteredClassifications = useMemo(() => {
     if (!searchTerm) return classifications;
@@ -200,6 +263,10 @@ const CategorySection: React.FC<CategoryProps> = ({
                             isExpanded={expandedRequirements[req.id]}
                             onToggle={() => toggleRequirement(req.id)}
                             isFocused={focusedId === req.id}
+                            evaluations={evaluations?.filter(
+                              (evaluation) =>
+                                evaluation.requirement_id === req.id
+                            )}
                           />
                         </Collapsible>
                       ))}
@@ -220,6 +287,7 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
   onRequirementClick,
   isLoading,
   error,
+  evaluations,
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [expandedCategories, setExpandedCategories] = useState<{
@@ -232,31 +300,29 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
     [key: string]: boolean;
   }>({});
 
-  const groupedRequirements = useMemo(() => {
-    const requirements = requirementsData as {
-      groups: {
-        [category: string]: Requirement[];
-      };
-    };
+  const requirementsDataTyped = requirementsData as RequirementsData;
 
-    const grouped: {
-      [category: string]: {
-        [classification: string]: Requirement[];
-      };
+  const processedData = useMemo(() => {
+    const categorizedReqs: {
+      [category: string]: { [classification: string]: Requirement[] };
     } = {};
 
-    Object.entries(requirements.groups).forEach(([category, reqs]) => {
-      grouped[category] = {};
-      reqs.forEach((req: Requirement) => {
-        if (!grouped[category][req.classification]) {
-          grouped[category][req.classification] = [];
+    requirementsDataTyped.groups.forEach((group) => {
+      group.requirements.forEach((req) => {
+        if (!categorizedReqs[req.category]) {
+          categorizedReqs[req.category] = {};
         }
-        grouped[category][req.classification].push(req);
+        if (!categorizedReqs[req.category][req.classification]) {
+          categorizedReqs[req.category][req.classification] = [];
+        }
+        categorizedReqs[req.category][req.classification].push(req);
       });
     });
 
-    return grouped;
-  }, []);
+    return {
+      groups: categorizedReqs,
+    };
+  }, [requirementsDataTyped]);
 
   const toggleCategory = useCallback((category: string) => {
     setExpandedCategories((prev) => ({
@@ -319,7 +385,7 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
           </div>
         </div>
 
-        {Object.entries(groupedRequirements).map(
+        {Object.entries(processedData.groups).map(
           ([category, classifications]) => (
             <CategorySection
               key={category}
@@ -333,6 +399,7 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
               toggleRequirement={toggleRequirement}
               focusedId={focusedId}
               searchTerm={searchTerm}
+              evaluations={evaluations}
             />
           )
         )}
