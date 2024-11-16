@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { EvaluationData } from "@/lib/eval";
+import { EvaluationData, convertCacheToEvalData } from "@/lib/eval";
 import { InfoBox } from "@/components/InfoBox";
 import { getData } from "@/lib/loader";
 
@@ -60,7 +60,7 @@ export default function Page() {
 
     setSelectedEvaluation({
       type,
-      data: data[selectedSource].evaluation,
+      data: convertCacheToEvalData(data[selectedSource].evaluation),
       sectionIndex: sectionDataIndex,
       sentenceIndex: sentenceDataIndex,
     });

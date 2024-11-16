@@ -445,3 +445,34 @@ export function getEnhancedRequirementsForArticle(
     mergeRequirementWithEvaluation(evaluation, requirementsData)
   );
 }
+
+/**
+ * Type guard to ensure requirement evaluation has non-null score
+ */
+export function isValidRequirementEvaluation(
+  evaluation: import("./cache").RequirementEvaluation
+): evaluation is RequirementEvaluation {
+  return evaluation.score !== null && evaluation.confidence !== null;
+}
+
+/**
+ * Converts cache evaluation data to eval evaluation data by filtering out invalid evaluations
+ */
+export function convertCacheToEvalData(
+  cacheData: import("./cache").Evaluation
+): EvaluationData {
+  return {
+    sections: cacheData.sections.map((section) => ({
+      ...section,
+      sentence_evaluations: section.sentence_evaluations.map((sentence) => ({
+        ...sentence,
+        requirement_evaluations: sentence.requirement_evaluations.filter(isValidRequirementEvaluation)
+      })),
+      requirement_evaluations: section.requirement_evaluations.filter(isValidRequirementEvaluation)
+    })),
+    article_evaluation: {
+      ...cacheData.article_evaluation,
+      requirement_evaluations: cacheData.article_evaluation.requirement_evaluations.filter(isValidRequirementEvaluation)
+    }
+  };
+}
